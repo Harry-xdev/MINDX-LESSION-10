@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 - JS: iterators, objects</title>
+    <style>
+        div {
+            margin: auto;
+            height: 1200px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Bài 1</h1>
+        <p><strong>person = { <br>
+            name: 'Bob', <br>
+            occupation: 'web developer', <br>
+            hobbies: 'painting', <br>
+        };</strong></p>
+        <p>1/ Cách truy cập bằng dấu "."</p>
+        <ul>
+            <li>person.name</li>
+            <li>person.occupation</li>
+            <li>person.hobbies</li>
+        </ul>
+        <p>2/ Cách truy cập bằng dấu "[]"</p>
+        <ul>
+            <li>person.["name"]</li>
+            <li>person.["occupation"]</li>
+            <li>person.["hobbies"]</li>
+        </ul>
+        <h1>Bài 2: OUTPUT TRONG CONSOLE</h1>
+        <p><strong>let obj = {<br>
+            b: 2,<br>
+            a: 1,<br>
+            c: 3,<br>
+        };</strong></p>
+
+        <h1>Bài 4: Thay giá trị của 6 = 606</h1>
+        <p><strong>let obj = {<br>
+            foo: { a: "hello", b: "world" },<br>
+            bar: ["example", "mem", null, { xyz: 6 }, 88],<br>
+            qux: [4, 8, 12]<br>
+        };</strong></p>
+
+        <p>1/ Cách truy cập trực tiếp</p>
+        <ul>
+            <li>obj.bar[3].xyz = 606</li>
+        </ul>
+        <p>2/ Cách truy cập bằng Object.assign</p>
+        <ul>
+        <li>Object.assign(obj.bar[3],{xyz:606})</li>
+        </ul>
+    </div>
+</body>
+<script src="index.js"></script>
+<footer>
+
+</footer>
+</html>
